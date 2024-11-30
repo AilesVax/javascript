@@ -1,0 +1,22 @@
+.content{
+    display: none;
+}
+.tab-active{
+    color: red;
+}
+
+.active{
+    display: block;
+}
+
+.borderr{
+   border: solid 2px black;
+   padding: 4%;
+   
+}
+
+.borderrb{
+    border: solid 2px red;
+    padding: 4%;
+    
+ }

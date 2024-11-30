@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbarre.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img width="8%" src="legends-of-runeterra-logo-8983162BE7-seeklogo.com.png" alt="logo" style="padding: 5px;">
+            
+                <ul>
+                    <li>
+                        <a  href="index.html">Acceuil</a>
+                    </li>
+                    <li>
+                        <a  href="carte.html">Les cartes</a>
+                    </li>
+                </ul>
+            
+        </nav>
+
+        <h1 id="titre"><img width="25%" src="Legends_of_Runeterra_logo.png" alt="logo" > </h1>
+    </header>
+    <main>
+        <h2 class="d-flex justify-content-center margt">INSCRIPTION</h2>
+        <section class="d-flex flex-colum align-item-center   ">
+            <div class="message-error">
+                <ul id="test">
+                    
+                </ul>
+            </div>
+            <div class="message-success">
+                Formulaire envoyé !
+            </div>
+            <form action="" method="POST" enctype="multipart/form-data">
+                <div>
+                    <label for="pseudo">Pseudo</label>
+                    <input type="text" name="pseudo" id="pseudo">
+                </div>
+            
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                
+                <div>
+                    <label for="password">Mot de passe</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                
+                <div>
+                    <label for="password2">Verification mot de passe</label>
+                    <input type="password" name="password2" id="password2">
+                </div>
+                
+                <div>
+                    <label for="question">Avez-vous des enfants ?</label>
+                    yes<input type="radio" name="oui" id="oui">
+                    no<input type="radio" name="oui" id="non">
+                </div>
+                <button type="submit">S'inscrire</button>
+            
+            </form>
+        </section>
+    </main>
+<script src="formulaire.js"></script>
+</body>
+</html>

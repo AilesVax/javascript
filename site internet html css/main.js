@@ -9,16 +9,16 @@ let contenu3 = document.querySelector('.nomDuContenu3')
 li.forEach(lis => {
     
     lis.addEventListener("click",function(){
-        
+        // effacer la classe de la couleur rouge de toutes les li
         li.forEach(li =>{
             li.classList.remove('tab-active')
             li.classList.remove('borderrb')    
         })
-        
+        // effacer la classe des div 
         div.forEach((div =>{
             div.classList.remove('active')   
         }))
-        
+        // en rajoute cesq classes sur la li cliquer
         this.classList.add('tab-active');  
         this.classList.add('borderrb'); 
         

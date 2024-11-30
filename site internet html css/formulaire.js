@@ -8,13 +8,14 @@ form.addEventListener('submit', function (event) {
     let error = document.querySelector('.message-error')
     let err = document.createElement('li')
     let mess = document.querySelectorAll("li")
+    // enlever tous les messages d'erreur
     mess.forEach(element => {
         element.remove();
     });
     
     let pseudo = document.querySelector('#pseudo')
     let errpseudo = document.createElement('li')
-
+    // pseudo au dessus de 6 caractere
     if (pseudo.value.length < 6) {
         error.classList.add('visible')
         
@@ -27,7 +28,7 @@ form.addEventListener('submit', function (event) {
         pseudo.classList.remove('erreur')
         pseudo.classList.add('success')
     }
-
+    // Juste verification email
     if (email.value == '') {
         email.classList.add('erreur')
         email.classList.remove('success')
@@ -71,7 +72,7 @@ form.addEventListener('submit', function (event) {
         password2.classList.remove('success')
 
     }
-
+//   message de fin de reussite
     let succes = document.querySelector('.message-success' )
     succes.classList.remove( 'visible' )
 
